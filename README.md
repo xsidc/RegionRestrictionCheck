@@ -105,7 +105,10 @@
 ````bash
 bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
 ````
-
+**一直卡在Installing bind-utils解决办法**
+````bash
+yum -y install bind-utils
+````
 **或者直接运行以下Docker命令** (兼容ARM架构)
 ````docker
 docker run --rm --net=host lmc999/regioncheck
